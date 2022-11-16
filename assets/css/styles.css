@@ -1,0 +1,304 @@
+
+* {
+  box-sizing: border-box;  /*giữ cho width và height là kích thước đã bao gồm border và padding*/
+  scroll-behavior: smooth;  /* tạo hiệu ứng mượt mà cho vị trí cuộn, thay vì một bước nhảy thẳng khi người dùng nhấp vào một liên kết*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.025em;
+  line-height: 20px;
+
+}
+
+img{
+  width: 100px;
+}
+
+/* loại bỏ dấu đầu dòng */
+nav ul{
+  list-style-type: none;
+  display: flex;
+}
+
+nav {
+  display: inline-block;
+}
+
+/* loại bỏ dấu gạch dưới */
+.nav-link {
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+
+header {
+  padding: 15px 20px 0 20px;
+  display: flex;                  /* xác định vùng chứa */
+  justify-content: space-between; /* xác định phân bố các mục đều trên dòng */
+  width:100%;
+  position:fixed;                 /* cố định menu khi cuộn */
+  top: 0;
+  left: 0;
+  background-color: rgb(101, 24, 24); 
+  
+}
+
+nav ul li:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+#subscribe{
+ width: 400px;
+ margin: 0 auto;
+ text-align: center;
+ margin-top: 150px;
+}
+
+#subscribe h3 {
+  font-size: 150%;
+}
+
+#subscribe form {
+  display: flex;            /* xác định vùng chứa */
+  flex-direction: column;   /* xác định hướng các mục flex được đặt trong vùng chứa từ trên xuống*/
+  align-items: center;
+}
+
+#subscribe input[type="submit"] {
+  width: 30%;
+  background-color: #E3E3E3;
+  border: none;
+  padding: 5px 0; 
+  font-size: 110%;
+  margin-top: 10px;
+}
+
+#subscribe input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #db5854;
+}
+
+#subscrite input[type="email"] {
+  width: 70%;
+  padding: 10px;
+}
+
+#subscribe input[type='email']:hover {
+  border: 2px solid #AAAAAA;
+}
+
+.content {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+#classify{
+  margin: 50px 0;
+}
+
+.saffron{
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.img {
+  margin: 40px;
+}
+
+.marketing-desc {
+  margin: 40px 0;
+}
+
+#guides {
+  margin: 80px auto;
+  display: flex;
+  text-align: center; 
+
+}
+
+/*Loại bỏ các kiểu danh sách mặc định, chỉ định chiều cao dòng là 1,8rem*/
+#guides ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8rem;
+  
+}
+
+/*Định hình mỗi hướng dẫn thành một hộp có đường viền và biểu ngữ màu ở trên cùng chứa guide-title*/
+.guide {
+  width: calc(100%/3);
+  border: 1px solid #000000;
+  margin: 0px 1%;
+}
+
+.guide-title {
+  background-color: #DDD6D0;
+  padding: 25px 0;
+  font-size: 1.1rem;
+}
+
+/*sửa kích thước phông chữ cho price*/
+.price {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.guides #btn {
+    display: inline-block;
+}
+
+#guides button {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  border-radius: none;
+  border: 1px solid black;
+  background-color: gold;
+  font-weight: 600;
+  transition: all .4s ease;
+  
+}
+/*
+.guide #btn1{
+  margin-top: 45px;
+}
+*/
+#guides button:hover {
+  background-color: brown ;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #757575;
+  display: inline-block;
+}
+
+footer {
+  background-color: #DDD6D0;
+  padding: 20px 20px 5px 0;
+  line-height: 0.8rem;
+  font-size: 0.9rem;
+  text-align:right
+}
+
+#foot-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#foot-menu ul li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+#foot-menu a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+
+@media (max-width: 1245px) {
+  /*   shop */
+    .feat-prod .img {
+      display: none; 
+    }
+    
+     #classify {
+      margin: 0 auto;
+    }
+    
+
+  /*   guides */
+    #guides {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .guide {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 10px;
+    }
+    
+  /*   footer */
+    footer {
+      width: 100vw!important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    /*   shop */
+      .feat-prod .img {
+        display: none; 
+      }
+      
+       #classify {
+        margin: 0 auto;
+      }
+      
+  
+    /*   guides */
+      #guides {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .guide {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 10px;
+      }
+      
+    /*   footer */
+      footer {
+        width: 100vw!important;
+      }
+    }
+  
+
+    @media (max-width: 425px) {
+  
+      #navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0.3rem;
+      }
+
+    /*   shop */
+    .feat-prod .img {
+      display: none; 
+    }
+    
+     #classify {
+      margin: 0 auto;
+    }
+    
+
+  /*   guides */
+    #guides {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .guide {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 10px;
+    }
+    
+  /*   footer */
+    footer {
+      width: 100vw!important;
+    }
+    }
+

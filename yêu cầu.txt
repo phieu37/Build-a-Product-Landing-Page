@@ -1,0 +1,45 @@
+					Yêu cầu CODE
+1. Trang đích sản phẩm phải có một phần tử header: với id="header"
+2. Có một image bên trong phần tử header: với id="header-img"(Một logo sẽ tạo nên một hình ảnh ở đây)
+3. Bên trong phần tử #header: thấy một phần tử nav với id="nav-bar"
+4. Có ít nhất 3 phần tử có thể nhấp bên trong phần tử nav: mỗi phần tử có lớp nav-link
+5. Khi nhấp vào một nút .nav-link trong phần tử nav: sẽ được đưa đến phần tương ứng của trang đích
+6. Có thể xem video về sản phẩm được nhúng: với id="video"
+7. Trang đích có một phần tử form: với id="form"
+8. Bên trong form: có một trường input với id="email" có thể nhập địa chỉ email
+9. Trường nhập #email phải có: văn bản giữ chỗ(placeholder) để cho người dùng biết trường này để làm gì
+10. Trường nhập #email sử dụng xác thực HTML5 để xác nhận văn bản đã nhập là địa chỉ email
+11. Bên trong form: có một submit input với id="submit"
+12. Khi nhấp vào phần tử #submit: email sẽ được gửi đến một trang tĩnh 
+(sử dụng URL giả này https://www.freecodecamp.com/email-submit:)
+13. Thanh điều hướng(navbar) phải luôn ở trên cùng của chế độ xem
+14. Trang đích sản phẩm phải có ít nhất một truy vấn phương tiện(media query)
+15. Trang đích sản phẩm nên sử dụng CSS flexbox ít nhất một lần
+
+					Yêu cầu TEST
+1. Có một phần tử header với id="header"
+2. Có một phần tử img với id="header-img"
+3. #header-img là con của #header
+4. #header-img có một thuộc tính src
+5. Giá trị src của #header-img phải là một URL hợp lệ(bắt đầu bằng http)
+6. Có một phần tử nav với id="nav-bar"
+7. #nav-bar là con của #header
+8. Có ít nhất 3 phần tử .nav-link trong #nav-bar
+9. Mỗi phần tử .nav-link có 1 thuộc tính href
+10. Mỗi phần tử .nav-link phải liên kết đến một phần tử tương ứng trên trang đích
+(có một href với 1 giá trị là id của phần tử khác VD: #footer)
+11. Có một video / phần tử iframe với một id="video"
+12. #video có một thuộc tính src
+13. Có một phần tử form với id="form"
+14. Có một phần tử input với id="email"
+15. #email là con của #form
+16. #email có thuộc tính placeholder với văn bản giữ chỗ
+17. #email sử dụng xác thực HTML5 bằng cách đặt nó type="email"
+18. Có một phần tử input với id="submit"
+19. #submit là con của #form
+20. #submit có type="submit"
+21. #form có một thuộc tính action="https://www.freecodecamp.com/email-submit"
+22. #email có một name="email"
+23. #nav-bar phải luôn ở trên cùng của khung nhìn
+24. Trang Đích Sản phẩm nên sử dụng ít nhất 1 truy vấn phương tiện(media query)
+25. Trang Đích Sản phẩm của bạn nên sử dụng CSS Flexbox ít nhất một lần
